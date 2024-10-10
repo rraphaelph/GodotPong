@@ -62,6 +62,6 @@ func _process(delta):
 	if right_pos.y > 0 and Input.is_action_pressed(&"right_move_up"):
 		right_pos.y += -PAD_SPEED * delta
 	if right_pos.y < screen_size.y and Input.is_action_pressed(&"right_move_down"):
-		right_pos.y += PAD_SPEED * delta * 10
+		right_pos.y += PAD_SPEED * delta
 
 	right_paddle.set_position(right_pos)
